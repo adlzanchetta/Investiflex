@@ -1,9 +1,6 @@
-import Image from "next/image";
-import vector3 from "./Vector3.svg";
-
 const Title2 = () => {
     return (
-        <h1 className="text-[#20212A] font-black text-6xl">Use <span className="text-[#E53FF8]">Investiflex AI</span> for</h1>
+        <p className="text-[#20212A] font-black text-[7.5vw] md:text-[3vw] text-center md:px-28">Use <span className="text-[#E53FF8]">Investiflex AI</span> for</p>
     )
 }
 

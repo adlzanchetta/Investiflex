@@ -1,21 +1,25 @@
 import Image from "next/image";
-import banner1 from "./banner1.jpeg";
-import banner2 from "./banner2.png";
+import bannerPic from "./BannerPic.jpeg";
+import bannerTxt from "./BannerTxt.png";
 
 const Banner = () => {
     return (
-        <div className="flex w-full h-auto max-w-fit">
-            <div className="grid flex-grow place-items-center">
-                <div>
-                    <Image className="relative left-48 z-10 w-[80%] h-auto" src={banner2} alt={""}/>
-                    <br/>
-                    <p className={"relative left-48 z-10 text-center text-[#E53FF8] font-black text-[1.7vw] w-[80%] h-auto"}>MAKE BETTER INVESTMENT DECISIONS</p>
+        <div className="bg-white">
+            <div className="flex w-full h-auto flex-col md:flex-row">
+                <div className="grid flex-grow place-items-center">
+                    <div className="w-[80%] place-items-center text-base">
+                        <Image className="" src={bannerTxt} alt={""}/>
+                        <br/>
+                        <div className="text-center text-[#E53FF8] text-[4vw] font-black md:text-[2vw]">MAKE BETTER INVESTMENT DECISIONS</div>
+                    </div>
+                </div>
+                <br/>
+                <div className="grid flex-grow place-items-end">
+                    <Image className="" src={bannerPic} alt={""}/>
                 </div>
             </div>
-            <div className="grid flex-grow place-items-center">
-                <Image className="relative w-full h-auto" src={banner1} alt={""}/>
-            </div>
         </div>
+
     )
 }
 
